@@ -1,4 +1,3 @@
--- config: https://wezfurlong.org/wezterm/config/lua/config/index.html
 local wezterm = require("wezterm")
 
 require("events").setup()

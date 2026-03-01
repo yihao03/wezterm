@@ -7,7 +7,7 @@ function M.apply(config)
 	config.font = wezterm.font_with_fallback({
 		"Monaspace Xenon",
 		"Fira Code iScript",
-		"Fire Code",
+		"Fira Code",
 	})
 	config.font_size = 13
 	config.line_height = 1.2

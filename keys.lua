@@ -4,6 +4,7 @@ local M = {}
 
 function M.apply(config)
 	config.keys = {
+		-- split panes, imitates neovim keybindings
 		{
 			key = "|",
 			mods = "CTRL|SHIFT",
@@ -33,6 +34,12 @@ function M.apply(config)
 			key = "k",
 			mods = "CTRL|SHIFT",
 			action = wezterm.action.ActivatePaneDirection("Up"),
+		},
+	}
+	config.mouse_bindings = {
+		{
+			event = { Drag = { streak = 1, button = "Right" } },
+			action = wezterm.action.StartWindowDrag,
 		},
 	}
 end
